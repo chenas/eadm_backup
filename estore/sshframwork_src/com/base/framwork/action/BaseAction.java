@@ -124,6 +124,7 @@ ServletRequestAware, ParameterAware, ServletResponseAware {
 	 */
 	public IUser getLoginUser() {
 		IUser user = (IUser) doGetSessionObject(Constants.CURRENT_USER_KEY);
+		if(null == user) return null;
 		return user;
 	}
 

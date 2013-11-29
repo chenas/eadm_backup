@@ -65,6 +65,7 @@ public class EntityCrudAction<T extends BaseModel> extends EntityBaseAction<T>{
 	 * @throws Exception
 	 */
 	public String submitAdd() throws Exception {
+		log.info(getEntityService());
 		getEntityService().insertEntity(getEntity(), getLoginUser());
 		if (isEnableMessage()) {
 			savedMessage();

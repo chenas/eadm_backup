@@ -73,13 +73,14 @@ $(document).ready(function(){
 
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 <tr bgcolor="#E7E7E7">
-	<td height="24" colspan="13" background="Seller/skin/images/tbg.gif">&nbsp;订单列表(<s:property value="#request.pageList.list.size()" />)&nbsp;</td>
+	<td height="24" colspan="13" background="Seller/skin/images/tbg.gif">&nbsp;订单列表&nbsp;</td>
 </tr>
 <tr align="center" bgcolor="#FAFAF1" height="22">
 	<th width="4%">选择</th>
-	<th width="10%">订单编号</th>
-	<th width="16%">下单时间</th>
-	<th width="10%">订单总价</th>
+	<th width="10%">编号</th>
+	<th width="10%">登录名</th>
+	<th width="16%">商店名称</th>
+	<th width="30%">地址</th>
 	<!-- <th width="10%">联系方式</th> -->
 <!-- 	<th width="30%">目的地</th> -->
 	<th width="10%">操作</th>
@@ -94,12 +95,13 @@ $(document).ready(function(){
 <s:iterator value="#request.pageList.list" var="key">
 <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
 	<td><input name="checkbox" type="checkbox" id="checkid" value='<s:property value="#key.id" />' class="np"></td>
-	<td><s:property value="#key.orderid" /></td>
-	<td><s:property value="#key.orderdate" /></td>
-	<td><s:property value="#key.totalpris" /></td>
+	<td><s:property value="#key.storeId" /></td>
+	<td><s:property value="#key.name" /></td>
+	<td><s:property value="#key.storeName" /></td>
+	<td><s:property value="#key.address" /></td>
 	<%-- <td><s:property value="#key.phone" /></td> --%>
 	<%-- <td><s:property value="#key.fianladdr" /></td> --%>
-	<td><a id="edit" href='javascript:void(0)' >确认</a></td>
+	<td><a id="edit" href='javascript:void(0)' >删除</a></td>
 </tr>
 </s:iterator>
 </s:else>
@@ -117,12 +119,10 @@ $(document).ready(function(){
 <tr align="right" bgcolor="#EEF4EA">
 			<td colspan="14" align="center">
         		<input id="pageNo" type="hidden" value='<s:property value="#request.pageList.pageNumber" />' />
-				<a href="seller/order/newOrder?orderMenuFilter.pageNo=1">第一页</a>&nbsp;&nbsp;
 				<a href="javascript:void(0);" id="pre">上一页</a>
 				<a href="javascript:void(0);" id="current"><s:property value="#request.pageList.pageNumber" /></a>/
 				<a href="javascript:void(0);" id="totalPage"><s:property value="#request.pageList.totalPage" /></a>
 				<a href="javascript:void(0);" id="next">下一页</a>&nbsp;&nbsp;
-				<a href='seller/order/newOrder?orderMenuFilter.pageNo=<s:property value="#request.pageList.totalPage" />'>末页</a>
 			</td>
 </tr>
 </table>

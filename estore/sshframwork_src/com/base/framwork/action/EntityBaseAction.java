@@ -2,6 +2,7 @@ package com.base.framwork.action;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.reflect.MethodUtils;
+import org.apache.struts2.ServletActionContext;
 
 import com.base.framwork.domain.BaseModel;
 import com.base.framwork.queryfilter.QueryFilter;
@@ -35,6 +36,7 @@ public class EntityBaseAction<T extends BaseModel> extends BaseAction {
 		//5为model的长度
 		String serviceName = getModelName().substring(0, getModelName().length()-5)+"Service";
 		String beanId = serviceName.substring(0, 1).toLowerCase()+serviceName.substring(1);
+		log.info("beanId: "+beanId+" seviceName: "+serviceName);
 		return (IEntityService<T>) SpringBeanUtil.getSpringService(beanId);
 	}
 
@@ -55,6 +57,7 @@ public class EntityBaseAction<T extends BaseModel> extends BaseAction {
 	 */
 	protected void saveMessage(String paramString) {
 		String str = getText(paramString);
+		ServletActionContext.getContext().put("message", str);
 		//getRequest().getSession().setAttribute(Constants.POP_MESSAGE_KEY, str);
 	}
 	/**

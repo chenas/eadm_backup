@@ -32,6 +32,18 @@ public class OrderMenuListAction extends EntityListAction<OrderMenuModel> {
 	
 	private OrderMenuFilter orderMenuFilter;
 
+	public String newOrder(){
+		orderMenuFilter.setQueryString(" where a.status='o'");
+		orderMenuFilter.setOrderByString(" orderdate desc");
+		/*PageList pageList = new PageList();
+		pageList.setFullListSize(querySize(orderMenuFilter));
+		pageList.setObjectsPerPage(orderMenuFilter.getPageSize());
+		pageList.setList(query(orderMenuFilter));
+		ServletActionContext.getContext().put("pageList", pageList);*/
+		return intoList();
+	}
+	
+
 	public String listOrder(){
 		IUser user = (IUser) doGetSessionObject("loginUser");
 		if(user == null){

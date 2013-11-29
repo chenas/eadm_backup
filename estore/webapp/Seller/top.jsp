@@ -171,7 +171,7 @@ a:link,a:visited {
 		<dd><div class='itemsel' id='item1' onMouseMove="mv(this,'move',1);" onMouseOut="mv(this,'o',1);"><a href="Seller/menu.jsp" onclick="changeSel(1)" target="menu">您的主页</a></div></dd>
 		<dd><div class='item' id='item2' onMouseMove="mv(this,'m',2);" onMouseOut="mv(this,'o',2);"><a href="Seller/Product/menu-Product.jsp" onclick="changeSel(2)" target="menu">商品</a></div></dd>
 		<dd><div class='item' id='item8' onMouseMove="mv(this,'m',8);" onMouseOut="mv(this,'o',8);"><a href="Seller/Order/menu-Order.jsp" onclick="changeSel(8)" target="menu">订单</a></div></dd>
-		<dd><div class='item' id='item4' onMouseMove="mv(this,'m',4);" onMouseOut="mv(this,'o',4);"><a href="Seller/main.jsp" onclick="changeSel(4)" target="main">敬请期待</a></div></dd>
+		<dd><div class='item' id='item4' onMouseMove="mv(this,'m',4);" onMouseOut="mv(this,'o',4);"><a href="Seller/Store/menu-Store.jsp" onclick="changeSel(4)" target="menu">商店</a></div></dd>
 		<dd><div class='item' id='item9' onMouseMove="mv(this,'m',9);" onMouseOut="mv(this,'o',9);"><a href="Seller/main.jsp" onclick="changeSel(9)" target="main">敬请期待</a></div></dd>
 		</dl>
 		</td>

@@ -68,7 +68,7 @@
 	<td><input name="checkbox" type="checkbox" id="checkid" value="<s:property value="#key.id" />" class="np"></td>
 	<td><s:property value="#key.orderid" /></td>
 	<td><s:property value="#key.finaladdr" /></td>
-	<td><s:property value="#key.ordertime" /></td>
+	<td><s:property value="#key.orderdate" /></td>
 	<td><s:property value="#key.phone" /></td>
 	<td><s:property value="#key.totalpris" /></td>
 	<td rowspan="2"><img alt="二维码" src="<s:property value="#key.qrcode" />" width="150" height="40" ></td>

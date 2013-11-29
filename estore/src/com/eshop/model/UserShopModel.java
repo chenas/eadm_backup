@@ -71,7 +71,7 @@ public class UserShopModel extends BaseModel{
 		return email;
 	}
 
-	@Column(name="is_eshop", length=1, nullable=false, columnDefinition=" varchar(1) default '0'")
+	@Column(name="is_eshop", length=1, nullable=true, columnDefinition=" varchar(1) default '0'")
 	public String getIsEshop() {
 		return isEshop;
 	}

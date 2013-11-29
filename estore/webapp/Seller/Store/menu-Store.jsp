@@ -11,7 +11,7 @@
 <html>
 <head>
 <base href="<%=basePath%>">
-<title>Order_menu</title>
+<title>menu</title>
 <link rel="stylesheet" href="Seller/skin/css/base.css" type="text/css" />
 <link rel="stylesheet" href="Seller/skin/css/menu.css" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,30 +25,33 @@
     <td style='padding-left:3px;padding-top:8px' valign="top">
 	<!-- Item 1 Strat -->
       <dl class='bitem'>
-        <dt onClick='showHide("items1_1")'><b>订单管理</b></dt>
+        <dt onClick='showHide("items1_1")'><b>商店管理</b></dt>
         <dd style='display:block' class='sitem' id='items1_1'>
           <ul class='sitemu'>
             <li>
-                <a href='seller/order/newOrder' target='main'>新订单</a>
+                <a href='seller/shop/shopList' target='main'>商店列表</a>
             </li>
             <li>
-            	<!-- <a href='seller/order/allOrder' target='main'>所有订单</a> -->
+                <a href='Seller/Store/addStore.jsp' target='main'>增加商店</a>
             </li>
           </ul>
         </dd>
       </dl>
       <!-- Item 1 End -->
-      <!-- Item 2 Strat -->
+	<!-- Item 2 Strat -->
+      
+      <!-- Item 2 End -->
+      <!-- Item n Strat -->
       <dl class='bitem'>
         <dt onClick='showHide("items2_1")'><b>系统帮助</b></dt>
         <dd style='display:block' class='sitem' id='items2_1'>
           <ul class='sitemu'>
-            <li><a href='http://www.usst.edu.cn' target='_blank'>官方网站</a></li>
-            <li><a href='http://www.usst.edu.cn' target='_blank'>更多</a></li>
+            <li><a href='http://www.usst.edu.cn' target='_blank'>上海理工大学</a></li>
+            <li><a href='http://www.usst.edu.cn' target='_blank'>勤助中心</a></li>
           </ul>
         </dd>
       </dl>
-      <!-- Item 2 End -->
+      <!-- Item n End -->
 	  </td>
   </tr>
 </table>

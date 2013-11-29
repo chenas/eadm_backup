@@ -43,9 +43,10 @@ public class TestAdvertisementService {
 		user.setName("jack");
 		user.setRealname("Tom");
 		List<AdvertisementModel> lists = advertisementService.findEntityList();
-		for(int i=0; i<lists.size(); i++){
+		System.out.println(advertisementService);
+		/*for(int i=0; i<lists.size(); i++){
 			advertisementService.deleteEntity(lists.get(i), user);
-		}
+		}*/
 	}
 
 }

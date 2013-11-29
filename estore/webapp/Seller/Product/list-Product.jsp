@@ -30,9 +30,6 @@
   <tr>
   <td align="left" width="5%">快捷方式</td>
   <td align="center" width="95%">
-    <input type='button' class="coolbg np" onClick="window.location.href=('../Seller/Product/save-Product.jsp');" value='添加商品' />
-    <input type='button' class='coolbg np' onClick="window.location.href=('../Seller/Product/upload-Product.jsp');" value='批量导入商品' />
-    <input type='button' class="coolbg np" onClick="window.location.href=('../Seller/Category/input2-Category.jsp');" value='添加分类' />
     <input type='button' class="coolbg np" onClick="JavaScript:alert(('敬请期待'));" value='敬请期待' />
     <input type='button' class="coolbg np" onClick="JavaScript:alert(('敬请期待'));" value='敬请期待' />
     <input type='button' class="coolbg np" onClick="JavaScript:alert(('敬请期待'));" value='敬请期待' />

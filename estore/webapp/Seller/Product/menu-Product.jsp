@@ -32,7 +32,7 @@
                 <a href='seller/product/allProduct' target='main'>商品列表</a>
             </li>
             <li>
-            	<a href='Seller/Product/save-Product.jsp' target='main'>添加商品</a> 
+            	<!-- <a href='Seller/Product/save-Product.jsp' target='main'>添加商品</a>  -->
             </li>
             <li>
             	<a href='Seller/Product/upload-Product.jsp' target='main'>批量导入</a>
@@ -47,10 +47,10 @@
         <dd style='display:block' class='sitem' id='items1_1'>
           <ul class='sitemu'>
             <li>
-            	<a href='Seller/Product/list2-Product' target='main'>分类列表</a> 
+            	<!-- <a href='Seller/Product/list2-Product' target='main'>分类列表</a>  -->
             </li>
             <li>
-            	<a href='Seller/Product/input2-Product.jsp' target='main'>添加二级分类</a> 
+            	<!-- <a href='Seller/Product/input2-Product.jsp' target='main'>添加二级分类</a>  -->
             </li>
           </ul>
         </dd>
